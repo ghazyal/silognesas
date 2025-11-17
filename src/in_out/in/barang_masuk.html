@@ -157,7 +157,7 @@
                     <div class="row">
                       <div class="col-10">
                         <h5 class="card-title mb-0">
-                            <strong>Data</strong> Barang
+                            <strong>Data Barang</strong> Masuk
                         </h5>
                       </div>
                       <div class="col-2">
@@ -172,11 +172,11 @@
                     <thead>
                       <tr>
                         <th>No</th>
-                        <th class="d-none d-xl-table-cell">ID</th>
-                        <th class="d-none d-xl-table-cell">Nama</th>
-                        <th class="d-none d-xl-table-cell">Jenis</th>
-                        <th class="d-none d-md-table-cell">Satuan</th>
-                        <th class="d-none d-md-table-cell">Harga</th>
+                        <th class="d-none d-xl-table-cell">ID Transaksi</th>
+                        <th class="d-none d-xl-table-cell">Tanggal</th>
+                        <th class="d-none d-xl-table-cell">Supplier</th>
+                        <th class="d-none d-md-table-cell">ID Barang</th>
+                        <th class="d-none d-md-table-cell">Nama Barang</th>
                         <th class="d-none d-md-table-cell">Gudang</th>
                         <th class="d-none d-md-table-cell">Rak</th>
                         <th class="d-none d-md-table-cell">Aksi</th>
@@ -253,36 +253,5 @@
     </div>
 
     <script src="../../../assets/js/app.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Pie chart
-        new Chart(document.getElementById("chartjs-dashboard-pie"), {
-          type: "pie",
-          data: {
-            labels: ["Gudang 1", "Gudang 2", "Gudang 3"],
-            datasets: [
-              {
-                data: [100, 100, 200],
-                backgroundColor: [
-                  window.theme.primary,
-                  window.theme.warning,
-                  window.theme.danger,
-                ],
-                borderWidth: 5,
-              },
-            ],
-          },
-          options: {
-            responsive: !window.MSInputMethodContext,
-            maintainAspectRatio: false,
-            legend: {
-              display: false,
-            },
-            cutoutPercentage: 75,
-          },
-        });
-      });
-    </script>
   </body>
 </html>
