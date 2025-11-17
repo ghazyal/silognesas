@@ -21,10 +21,10 @@
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>SISLOG Nesas | Tambah Data Barang</title>
+    <title>SISLOG Nesas | Supplier</title>
 
-    <link href="../../assets/css/app.css" rel="stylesheet" />
-    <link href="../../assets/css/styles.css" rel="stylesheet" />
+    <link href="../../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../../assets/css/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -35,7 +35,7 @@
     <div class="wrapper">
       <nav id="sidebar" class="sidebar js-sidebar">
         <div class="sidebar-content js-simplebar">
-          <a class="sidebar-brand" href="../../index.html">
+          <a class="sidebar-brand" href="../../../index.html">
             <span class="align-middle">SISLOG NESAS</span>
           </a>
 
@@ -43,35 +43,35 @@
             <li class="sidebar-header">Halaman</li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="../../index.html">
+              <a class="sidebar-link" href="../../../index.html">
                 <i class="align-middle" data-feather="sliders"></i>
                 <span class="align-middle">Dashboard</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="../../src/supplier/supply.html">
+              <a class="sidebar-link" href="../../../src/supplier/supply.html">
                 <i class="align-middle" data-feather="user"></i>
                 <span class="align-middle">Supplier</span>
               </a>
             </li>
 
-            <li class="sidebar-item active">
-              <a class="sidebar-link" href="data_barang.html">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="../../../src/master_barang/data_barang.html">
                 <i class="align-middle" data-feather="box"></i>
                 <span class="align-middle">Data Barang</span>
               </a>
             </li>
 
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="barang_masuk.html">
                 <i class="align-middle" data-feather="download"></i>
                 <span class="align-middle">Barang Masuk</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="../../../src/in_out/out/barang_keluar.html">
                 <i class="align-middle" data-feather="upload"></i>
                 <span class="align-middle">Barang Keluar</span>
               </a>
@@ -80,21 +80,21 @@
             <li class="sidebar-header">Master Admin</li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="../../../src/account/akun.html">
                 <i class="align-middle" data-feather="users"></i>
                 <span class="align-middle">Data Akun</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="../../../src/laporan/index.html">
                 <i class="align-middle" data-feather="book"></i>
                 <span class="align-middle">Laporan</span>
               </a>
             </li>
 
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#">
+              <a class="sidebar-link" href="../../../src/settings/index.html">
                 <i class="align-middle" data-feather="settings"></i>
                 <span class="align-middle">Pengaturan Aplikasi</span>
               </a>
@@ -157,106 +157,68 @@
                     <div class="row">
                       <div class="col-10">
                         <h5 class="card-title mb-0">
-                            <strong>Tambah Data</strong> Barang
+                            <strong>Data</strong> Barang
                         </h5>
                       </div>
                       <div class="col-2">
-                        <a href="data_barang.html" class="btn btn-secondary">
-                          <i class="align-middle" data-feather="arrow-left"></i> 
-                          <span class="align-middle"> Kembali</span>
+                        <a href="tambah.html" class="btn btn-primary">
+                            <i class="align-middle" data-feather="plus"></i> 
+                            <span class="align-middle">Tambah Data</span>
                         </a>
                       </div>
                     </div>
                   </div>
+                  <table class="table table-hover my-0">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th class="d-none d-xl-table-cell">ID</th>
+                        <th class="d-none d-xl-table-cell">Nama</th>
+                        <th class="d-none d-xl-table-cell">Jenis</th>
+                        <th class="d-none d-md-table-cell">Satuan</th>
+                        <th class="d-none d-md-table-cell">Harga</th>
+                        <th class="d-none d-md-table-cell">Gudang</th>
+                        <th class="d-none d-md-table-cell">Rak</th>
+                        <th class="d-none d-md-table-cell">Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="d-none d-xl-table-cell">BRG-0001</td>
+                        <td class="d-none d-xl-table-cell">Kaos Kaki</td>
+                        <td class="d-none d-xl-table-cell">Seragam</td>
+                        <td class="d-none d-md-table-cell">Pcs</td>
+                        <td class="d-none d-md-table-cell">Rp.5.000</td>
+                        <td class="d-none d-md-table-cell">G1</td>
+                        <td class="d-none d-md-table-cell">R-002</td>
+                        <td class="d-none d-md-table-cell">
+                            <a href="edit.html" class="btn btn-warning">
+                                <i class="align-middle" data-feather="edit"></i> 
+                                <span class="align-middle"> Edit</span>
+                            </a>
+                            <a href="#" class="btn btn-danger">
+                                <i class="align-middle" data-feather="trash"></i> 
+                                <span class="align-middle"> Hapus</span>
+                            </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                   
-                  <div class="card-body">
-                    <form action="">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-group mb-3">
-                                    <label for="" class="form-label">Nama Barang</label>
-                                    <input type="text" class="form-control" name="" id="">
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label for="" class="form-label">Jenis Barang</label>
-                                    <select name="" id="" class="form-select">
-                                      <option value="">Pilih Jenis</option>
-                                      <option value="">Jenis 1</option>
-                                      <option value="">Jenis 2</option>
-                                      <option value="">Jenis 3</option>
-                                      <option value="">Jenis 4</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="form-label">Gudang</label>
-                                    <select name="" id="" class="form-select">
-                                      <option value="">Pilih Gudang</option>
-                                      <option value="">G1</option>
-                                      <option value="">G2</option>
-                                      <option value="">G3</option>
-                                    </select>
-                                </div>
-                                
-                            </div>
-                            <div class="col-4">
-                              <div class="row">
-                                <div class="col">
-                                  <label for="" class="form-label">Satuan</label>
-                                    <select name="" id="" class="form-select">
-                                      <option value="">Pilih Satuan</option>
-                                      <option value="">Satuan 1</option>
-                                      <option value="">Satuan 2</option>
-                                      <option value="">Satuan 3</option>
-                                      <option value="">Satuan 4</option>
-                                    </select>
-                                </div>
-                                <div class="col">
-                                  <div class="form-group mb-3">
-                                    <label for="" class="form-label">Stok</label>
-                                    <input type="number" class="form-control" name="" id="">
-                                </div>
-                                </div>
-                              </div>
-                              <div class="form-group mb-3">
-                                <label for="" class="form-label">Harga</label>
-                                <input type="number" class="form-control" name="" id="">
-                              </div>
-                              <div class="form-group">
-                                <label for="" class="form-label">Rak</label>
-                                <select name="" id="" class="form-select">
-                                  <option value="">Pilih Rak</option>
-                                  <option value="">R1</option>
-                                  <option value="">R2</option>
-                                  <option value="">R3</option>
-                                </select>
-                            </div>
-                          </div>
-                          <div class="col-4">
-                            <label for="" class="form-label">QR Code</label><br>
-                            <img 
-                              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=preview"
-                              alt="QR Code Preview"
-                              class="border rounded"
-                              style="max-width:1000px; height:auto;"
-                            >
-                          </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <a href="#" class="btn btn-success">
-                                    <i class="align-middle" data-feather="save"></i> 
-                                    <span class="align-middle"> Simpan</span>
-                                </a>
-                                <a href="#" class="btn btn-danger">
-                                    <i class="align-middle" data-feather="refresh-ccw"></i> 
-                                    <span class="align-middle"> Reset</span>
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+                  <div class="card-footer d-flex justify-content-center">
+                    <div class="btn-toolbar mb-0" role="toolbar" aria-label="Toolbar with button groups">
+                      <button type="button" class="btn btn-outline-primary rounded-pill me-3 fw-bold">&lt;</button>
+                      <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn text-muted">2</button>
+                        <button type="button" class="btn text-muted">3</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-primary rounded-pill ms-3 fw-bold">&gt;</button>
+                    </div>
                   </div>
-
-    
+                  
+                  
                   
                 </div>
               </div>
@@ -290,7 +252,7 @@
       </div>
     </div>
 
-    <script src="../../assets/js/app.js"></script>
+    <script src="../../../assets/js/app.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5"
+    />
+    <meta name="author" content="AdminKit" />
+    <meta
+      name="keywords"
+      content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+    <title>SISLOG Nesas | Tambah Data Barang</title>
+
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+    <link href="../../assets/css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav id="sidebar" class="sidebar js-sidebar">
+        <div class="sidebar-content js-simplebar">
+          <a class="sidebar-brand" href="../../index.html">
+            <span class="align-middle">SISLOG NESAS</span>
+          </a>
+
+          <ul class="sidebar-nav">
+            <li class="sidebar-header">Halaman</li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="../../index.html">
+                <i class="align-middle" data-feather="sliders"></i>
+                <span class="align-middle">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="../../src/supplier/supply.html">
+                <i class="align-middle" data-feather="user"></i>
+                <span class="align-middle">Supplier</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="data_barang.html">
+                <i class="align-middle" data-feather="box"></i>
+                <span class="align-middle">Data Barang</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="align-middle" data-feather="download"></i>
+                <span class="align-middle">Barang Masuk</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="align-middle" data-feather="upload"></i>
+                <span class="align-middle">Barang Keluar</span>
+              </a>
+            </li>
+
+            <li class="sidebar-header">Master Admin</li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="align-middle" data-feather="users"></i>
+                <span class="align-middle">Data Akun</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="align-middle" data-feather="book"></i>
+                <span class="align-middle">Laporan</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="align-middle" data-feather="settings"></i>
+                <span class="align-middle">Pengaturan Aplikasi</span>
+              </a>
+            </li>
+
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+          <a class="sidebar-toggle js-sidebar-toggle">
+            <i class="hamburger align-self-center"></i>
+          </a>
+
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav navbar-align">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-icon dropdown-toggle d-inline-block d-sm-none"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="align-middle" data-feather="settings"></i>
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle d-none d-sm-inline-block"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="assets/img/avatar/avatar.jpg"
+                    class="avatar img-fluid rounded me-1"
+                    alt="PP"
+                  />
+                  <span class="text-dark">Charles Hall</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a class="dropdown-item" href="#"
+                    ><i class="align-middle me-1" data-feather="user"></i> Akun
+                    saya</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Keluar</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="content">
+          <div class="container-fluid p-0">
+
+            <div class="row">
+              <div class="col-12 d-flex">
+                <div class="card flex-fill">
+                  <div class="card-header">
+                    <div class="row">
+                      <div class="col-10">
+                        <h5 class="card-title mb-0">
+                            <strong>Edit Data</strong> Barang
+                        </h5>
+                      </div>
+                      <div class="col-2">
+                        <a href="data_barang.html" class="btn btn-secondary">
+                          <i class="align-middle" data-feather="arrow-left"></i> 
+                          <span class="align-middle"> Kembali</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-group mb-3">
+                                    <label for="" class="form-label">Nama Barang</label>
+                                    <input type="text" class="form-control" name="" id="">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="" class="form-label">Jenis Barang</label>
+                                    <select name="" id="" class="form-select">
+                                      <option value="">Pilih Jenis</option>
+                                      <option value="">Jenis 1</option>
+                                      <option value="">Jenis 2</option>
+                                      <option value="">Jenis 3</option>
+                                      <option value="">Jenis 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Gudang</label>
+                                    <select name="" id="" class="form-select">
+                                      <option value="">Pilih Gudang</option>
+                                      <option value="">G1</option>
+                                      <option value="">G2</option>
+                                      <option value="">G3</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="col-4">
+                              <div class="row">
+                                <div class="col">
+                                  <label for="" class="form-label">Satuan</label>
+                                    <select name="" id="" class="form-select">
+                                      <option value="">Pilih Satuan</option>
+                                      <option value="">Satuan 1</option>
+                                      <option value="">Satuan 2</option>
+                                      <option value="">Satuan 3</option>
+                                      <option value="">Satuan 4</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                  <div class="form-group mb-3">
+                                    <label for="" class="form-label">Stok</label>
+                                    <input type="number" class="form-control" name="" id="">
+                                </div>
+                                </div>
+                              </div>
+                              <div class="form-group mb-3">
+                                <label for="" class="form-label">Harga</label>
+                                <input type="number" class="form-control" name="" id="">
+                              </div>
+                              <div class="form-group">
+                                <label for="" class="form-label">Rak</label>
+                                <select name="" id="" class="form-select">
+                                  <option value="">Pilih Rak</option>
+                                  <option value="">R1</option>
+                                  <option value="">R2</option>
+                                  <option value="">R3</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                                <label for="" class="form-label">QR Code</label><br>
+                                <img 
+                                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=preview"
+                                  alt="QR Code Preview"
+                                  class="border rounded"
+                                  style="max-width:1000px; height:auto;"
+                                >
+                              </div>
+                            
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4">
+                                <a href="#" class="btn btn-success">
+                                    <i class="align-middle" data-feather="save"></i> 
+                                    <span class="align-middle"> Simpan</span>
+                                </a>
+                                <a href="#" class="btn btn-danger">
+                                    <i class="align-middle" data-feather="refresh-ccw"></i> 
+                                    <span class="align-middle"> Reset</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+
+    
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row text-muted">
+              <div class="col-6 text-start">
+                <p class="mb-0">
+                  <a class="text-muted" href="#" target="_blank"
+                    ><strong>Sistem Informasi Logistik Nesas</strong></a
+                  >
+                  &copy;
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-muted" href="#" target="_blank"
+                      >Butuh Bantuan?</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../../assets/js/app.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Pie chart
+        new Chart(document.getElementById("chartjs-dashboard-pie"), {
+          type: "pie",
+          data: {
+            labels: ["Gudang 1", "Gudang 2", "Gudang 3"],
+            datasets: [
+              {
+                data: [100, 100, 200],
+                backgroundColor: [
+                  window.theme.primary,
+                  window.theme.warning,
+                  window.theme.danger,
+                ],
+                borderWidth: 5,
+              },
+            ],
+          },
+          options: {
+            responsive: !window.MSInputMethodContext,
+            maintainAspectRatio: false,
+            legend: {
+              display: false,
+            },
+            cutoutPercentage: 75,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
