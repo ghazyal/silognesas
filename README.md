@@ -1,69 +1,175 @@
-# CodeIgniter 4 Application Starter
+# SILOGNESAS
 
-## What is CodeIgniter?
+### Sistem Informasi Pergudangan Berbasis Web untuk Mendukung Teaching Factory Program Keahlian Teknik Logistik
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+SILOGNESAS merupakan sistem informasi pergudangan berbasis web yang dikembangkan untuk mendukung kegiatan Teaching Factory (TEFA) pada Program Keahlian Teknik Logistik SMK Negeri 1 Subang.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+Sistem ini dirancang untuk membantu proses pengelolaan data pergudangan secara terkomputerisasi, mulai dari pengelolaan data barang dan supplier, pencatatan transaksi barang masuk dan keluar, pengelolaan stok, hingga penyajian laporan pergudangan.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## 📌 Latar Belakang
 
-## Installation & updates
+Pengelolaan data pergudangan pada kegiatan Teaching Factory membutuhkan pencatatan yang terstruktur agar informasi mengenai persediaan barang dapat dikelola dengan lebih efektif.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+SILOGNESAS dikembangkan sebagai solusi berbasis web untuk membantu proses pencatatan dan pengelolaan data pergudangan sehingga informasi mengenai barang, stok, transaksi, dan laporan dapat dikelola dalam satu sistem.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+---
 
-## Setup
+## 🎯 Tujuan
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+Sistem ini dikembangkan untuk:
 
-## Important Change with index.php
+- Membantu proses pengelolaan data barang.
+- Membantu proses pengelolaan data supplier.
+- Membantu pencatatan transaksi barang masuk dan barang keluar.
+- Membantu pemantauan stok barang.
+- Menyediakan laporan transaksi dan stok.
+- Mendukung digitalisasi pengelolaan pergudangan pada kegiatan Teaching Factory.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+---
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## ✨ Fitur
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### 🔐 Autentikasi
 
-## Repository Management
+- Login menggunakan username dan password.
+- Hak akses berdasarkan role pengguna.
+- Pengelolaan akun pengguna oleh Master Admin.
+- Reset password pengguna.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+### 📦 Pengelolaan Barang
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- Menambahkan data barang.
+- Mengubah data barang.
+- Menonaktifkan barang.
+- Mengaktifkan kembali barang.
+- Menampilkan informasi stok barang.
+- Menentukan supplier, rak, dan gudang barang.
 
-## Server Requirements
+### 🏢 Pengelolaan Supplier
 
-PHP version 8.2 or higher is required, with the following extensions installed:
+- Menambahkan data supplier.
+- Mengubah data supplier.
+- Menghapus data supplier.
+- Menampilkan daftar supplier.
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+### 🔄 Transaksi
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
+- Mencatat transaksi barang masuk.
+- Mencatat transaksi barang keluar.
+- Memperbarui stok secara otomatis berdasarkan transaksi.
+- Melakukan koreksi transaksi.
+- Menampilkan riwayat transaksi.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+### 📊 Dashboard
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Dashboard menampilkan informasi yang disesuaikan dengan hak akses pengguna.
+
+Untuk pengguna dengan hak akses pengelolaan sistem, dashboard menyediakan informasi ringkas mengenai kondisi data pergudangan.
+
+Untuk pengguna siswa, dashboard digunakan sebagai halaman penyambutan tanpa menampilkan informasi analitik pergudangan.
+
+### 📑 Laporan
+
+- Laporan transaksi barang masuk dan keluar.
+- Laporan stok barang.
+- Filter laporan berdasarkan parameter yang tersedia.
+- Export laporan ke PDF.
+- Export laporan ke Excel.
+
+### 🗄️ Pengelolaan Gudang
+
+- Menambahkan data gudang.
+- Menonaktifkan gudang.
+- Mengaktifkan kembali gudang.
+- Validasi gudang yang masih digunakan oleh barang.
+
+### 🗃️ Pengelolaan Rak
+
+- Menambahkan data rak.
+- Menonaktifkan rak.
+- Mengaktifkan kembali rak.
+- Validasi rak yang masih digunakan oleh barang.
+
+### 👥 Pengelolaan User
+
+Fitur pengelolaan user hanya tersedia bagi Master Admin.
+
+- Menambahkan user.
+- Mengubah username.
+- Mengubah email.
+- Mengubah role.
+- Menghapus user.
+- Reset password user.
+
+---
+
+## 👤 Hak Akses Pengguna
+
+| Fitur | Siswa | Guru | Master Admin |
+|---|:---:|:---:|:---:|
+| Dashboard | ✓ | ✓ | ✓ |
+| Data Barang | ✓ | ✓ | ✓ |
+| Data Supplier | ✓ | ✓ | ✓ |
+| Transaksi | ✓ | ✓ | ✓ |
+| Laporan | - | ✓ | ✓ |
+| Gudang | - | - | ✓ |
+| Rak | - | - | ✓ |
+| User | - | - | ✓ |
+
+---
+
+## 🛠️ Teknologi
+
+SILOGNESAS dikembangkan menggunakan teknologi berikut:
+
+- **PHP**
+- **CodeIgniter 4**
+- **MySQL**
+- **Bootstrap 5**
+- **JavaScript**
+- **Myth/Auth**
+- **HTML5**
+- **CSS3**
+
+---
+
+## 🏗️ Metode Pengembangan
+
+Pengembangan sistem menggunakan metode **Waterfall** yang terdiri dari beberapa tahapan:
+
+1. Analisis kebutuhan
+2. Perancangan sistem
+3. Implementasi
+4. Pengujian
+5. Pemeliharaan
+
+---
+
+## 🧪 Pengujian
+
+Pengujian sistem dilakukan menggunakan metode **Black Box Testing**.
+
+Pengujian dilakukan terhadap fungsi-fungsi utama sistem, meliputi:
+
+- Login
+- Dashboard
+- Data Supplier
+- Data Barang
+- Transaksi
+- Laporan
+- Data Gudang
+- Data Rak
+- Data User
+
+Hasil pengujian menunjukkan bahwa fungsi-fungsi yang diuji dapat berjalan sesuai dengan hasil yang diharapkan.
+
+---
+
+## ⚙️ Instalasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/USERNAME/silognesas.git
