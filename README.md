@@ -143,7 +143,6 @@ Pengembangan sistem menggunakan metode **Waterfall** yang terdiri dari beberapa 
 2. Perancangan sistem
 3. Implementasi
 4. Pengujian
-5. Pemeliharaan
 
 ---
 
@@ -172,4 +171,4 @@ Hasil pengujian menunjukkan bahwa fungsi-fungsi yang diuji dapat berjalan sesuai
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/USERNAME/silognesas.git
+git clone https://github.com/ghzayal/silognesas.git
