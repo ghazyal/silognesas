@@ -11,16 +11,16 @@ Sistem ini dirancang untuk membantu proses pengelolaan data pergudangan secara t
 ## 📸 Screenshot Aplikasi
 
 ### Dashboard
-![Dashboard SILOGNESAS](screenshots/dashboard.png)
+![Dashboard SILOGNESAS](screenshots/dashboard.PNG)
 
 ### Pengelolaan Barang
-![Pengelolaan Barang SILOGNESAS](screenshots/barang.png)
+![Pengelolaan Barang SILOGNESAS](screenshots/barang.PNG)
 
 ### Transaksi Barang
-![Transaksi SILOGNESAS](screenshots/transaksi.png)
+![Transaksi SILOGNESAS](screenshots/transaksi.PNG)
 
 ### Laporan Pergudangan
-![Laporan SILOGNESAS](screenshots/laporan.png)
+![Laporan SILOGNESAS](screenshots/laporan.PNG)
 
 ---
 
