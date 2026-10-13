@@ -8,6 +8,22 @@ Sistem ini dirancang untuk membantu proses pengelolaan data pergudangan secara t
 
 ---
 
+## 📸 Screenshot Aplikasi
+
+### Dashboard
+![Dashboard SILOGNESAS](screenshots/dashboard.png)
+
+### Pengelolaan Barang
+![Pengelolaan Barang SILOGNESAS](screenshots/barang.png)
+
+### Transaksi Barang
+![Transaksi SILOGNESAS](screenshots/transaksi.png)
+
+### Laporan Pergudangan
+![Laporan SILOGNESAS](screenshots/laporan.png)
+
+---
+
 ## 📌 Latar Belakang
 
 Pengelolaan data pergudangan pada kegiatan Teaching Factory membutuhkan pencatatan yang terstruktur agar informasi mengenai persediaan barang dapat dikelola dengan lebih efektif.
@@ -108,7 +124,7 @@ Fitur pengelolaan user hanya tersedia bagi Master Admin.
 ## 👤 Hak Akses Pengguna
 
 | Fitur | Siswa | Guru | Master Admin |
-|---|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|
 | Dashboard | ✓ | ✓ | ✓ |
 | Data Barang | ✓ | ✓ | ✓ |
 | Data Supplier | ✓ | ✓ | ✓ |
@@ -168,7 +184,43 @@ Hasil pengujian menunjukkan bahwa fungsi-fungsi yang diuji dapat berjalan sesuai
 
 ## ⚙️ Instalasi
 
+### Prasyarat
+
+Pastikan perangkat telah memiliki:
+
+- PHP dengan versi yang kompatibel dengan proyek.
+- Composer.
+- MySQL atau MariaDB.
+- Git.
+- Web server lokal seperti Laragon.
+
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/ghzayal/silognesas.git
+git clone https://github.com/ghazyal/silognesas.git
+cd silognesas
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+```
+
+### 3. Konfigurasi Environment
+
+Salin file `env` menjadi `.env`, lalu sesuaikan konfigurasi environment dan database berdasarkan kebutuhan aplikasi.
+
+### 4. Konfigurasi Database
+
+Buat database MySQL untuk SILOGNESAS, kemudian atur koneksi database di file `.env`.
+
+### 5. Jalankan Aplikasi
+
+Jalankan aplikasi menggunakan konfigurasi server lokal yang sesuai dengan struktur proyek CodeIgniter 4.
+
+---
+
+## 👨‍💻 Developer
+
+Dikembangkan sebagai proyek tugas akhir untuk mendukung digitalisasi pengelolaan pergudangan pada kegiatan Teaching Factory (TEFA) Program Keahlian Teknik Logistik SMK Negeri 1 Subang.
